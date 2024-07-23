@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .datos aplicar a todo lo que este dentro de className="datos" hijos no nietos */
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* */
+/* .datos input aplicar a los inputs que esten dentro de la className="datos" */
+.datos input {
+  /* --- ancho de los inputs */
+  width: 300px;
+  /* | largo de los inputs */
+  height: 30px;
+  /* tamaño de letra */
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* */
+/* .datos button aplicar a los buttons que esten dentro de la className="datos" */
+.datos button {
+  /* --- ancho de los buttons */
+  width: 320px;
+  /* | largo de los buttons */
+  height: 50px;
+  margin-top: 5px;
 }
